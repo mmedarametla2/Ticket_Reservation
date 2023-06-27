@@ -1,0 +1,25 @@
+<body>
+    <h1>Response is coming from ejs</h1>
+    <%if(data){ %>
+    <p>Number of passengers in reservation_system table is :<%=data%>
+    </p>
+    
+    <%}%>
+
+    <form method ="POST" action="/register">
+        <input type="text" name="res_name" class = "form" placeholder="Enter name">
+        <input type="decimal" name="res_seat_number" class = "form" placeholder="Enter seat_number">
+        <input type="date" name="res_date_time" class = "form" placeholder="Enter date and time">
+        
+        
+       Destination: <select name="dest">
+            <option value="chicago">chicago</option>
+            <option value="peoria">peoria</option>
+            <option value="newyork">newyork</option>
+          </select>
+          
+        <button>Submit</button>
+        </form>
+        
+        <a href="http://localhost:8080/index.html">Go to Index</a>
+    </body>

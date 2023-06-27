@@ -1,0 +1,11 @@
+<h1>Search for a passenger</h1>
+<p>Searched name:<%=data.Name%></p>
+<p>Searched dest_name:<%=data.Destination%></p>
+<p>Searched date_time :<%=data.date_time%></p>
+<p>Searched seat_number :<%=data.seat_number%></p>
+<form method="POST" action="/search">
+reservation_system ticket_number:<input type="text" name="res_ticket_number" placeholder="Enter searched ticket_number">
+<button>Search</button>
+</form>
+
+<a href="http://localhost:8080/index.html">Go to Index</a>

@@ -1,0 +1,23 @@
+<h1 style="background-color:aquamarine;">reservation information</h1>
+<table border=0>
+<tr style='text-align:left; background-color:rgb(171, 154, 188)'>
+<th>ticket_Number</th>
+<th>Name</th>
+<th>seat_number</th>
+<th>Destination</th>
+<th>date_time</th>
+</tr>
+
+<% data.forEach(function(reservation_system){ %>
+<tr style='text-align:left; background-color:rgb(231, 226, 237)'>
+<td><%= reservation_system.ticket_number %></td>
+<td><%= reservation_system.Name %></td>
+<td><%= reservation_system.Destination%></td>
+<td><%= reservation_system.seat_number%></td>
+<td><%= reservation_system.date_time%></td>
+<% }) %>
+</tr>
+
+</table>
+
+<a href="http://localhost:8080/index.html">Go to Index</a>
